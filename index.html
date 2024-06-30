@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+     <title>Calculadora IMC</title>
+</head>
+
+<body>
+     <main>
+          <section class="bmi-calculator-container">
+               <figure class="bmi-calculator-illustration">
+                    <img src="./img/img-imc.svg" alt="BMI Illustration">
+               </figure>
+
+               <form id="bmi-calculator-form" class="bmi-calculator-form">
+                    <h1 class="bmi-calculator-title">Calculadora IMC</h1>
+
+                    <div class="bmi-calculator-input-group">
+                         <label for="weight" class="bmi-calculator-label">
+                              <i class="fa-solid fa-weight-hanging"></i>
+                         </label>
+                         <input type="number" id="weight" class="bmi-calculator-input" placeholder="Digite seu peso"
+                              required>
+                         <span class="bmi-calculator-unit">(kg)</span>
+                    </div>
+
+                    <div class="bmi-calculator-input-group">
+                         <label for="height" class="bmi-calculator-label">
+                              <i class="fa-solid fa-ruler-vertical"></i>
+                         </label>
+                         <input type="number" id="height" class="bmi-calculator-input" placeholder="Digite sua altura"
+                              required>
+                         <span class="bmi-calculator-unit">(cm)</span>
+                    </div>
+
+                    <button id="calculate-bmi" class="bmi-calculator-button" type="submit">
+                         <i class="fa-solid fa-calculator"></i>
+                         Calcular
+                    </button>
+
+                    <div class="bmi-calculator-result">
+                         <figure class="bmi-calculator-result-image-figure">
+                              <img src="./img/peso-ideal.png" alt="BMI Status Image"
+                                   class="bmi-calculator-result-image">
+                         </figure>
+
+                         <div class="bmi-calculator-result-details">
+                              <h3 class="bmi-calculator-result-title">Seu IMC é:</h3>
+                              <h1 id="bmi-result" class="bmi-calculator-result-value">20.99</h1>
+                              <p id="bmi-status" class="bmi-calculator-result-status"></p>
+                         </div>
+                    </div>
+               </form>
+          </section>
+     </main>
+
+     <script src="./script.js"></script>
+</body>
+
+</html>
